@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>ActiveBox</title>
+	<meta charset="utf-8">
+	<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="animate.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="menu">
+			<div class="container">
+				<nav class="menu_nav">
+					<a href="#main" class="menu_link">Главная</a>
+					<a href="#uslugi" class="menu_link">Услуги</a>
+					<a href="#otzivi" class="menu_link">Отзывы</a>
+					<a href="#contacts" class="menu_link">Контакты</a>
+					<a href="#onas" class="menu_link">О нас</a>
+				</nav>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-wrap">
+					<div class="header__logo">
+						<img class="_img_logo" src="images/logo.png" alt="">
+					</div>
+					<div class="menu_display">
+						<a href="#main" class="menu_link">Главная</a>
+						<a href="#uslugi" class="menu_link">Услуги</a>
+						<a href="#" class="menu_link">Отзывы</a>
+						<a href="#" class="menu_link">Контакты</a>
+						<a href="#onas" class="menu_link">О нас</a>
+						<a href="#" class="menu_link" >
+							<img class="_img_ref" src="images/instagram.jpeg" alt="">
+						</a>
+						<a href="#" class="menu_link" >
+							<img class="_img_ref" src="images/vkontakte.png" alt="">
+						</a>
+					</div>
+					<button class="menu-button navbar_menu-button">
+						<span class="menu-button_line"></span>
+						<span class="menu-button_line"></span>
+						<span class="menu-button_line"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="top_image"></div>
+	<div class="container">
+
+		<div id="main" class="intro">
+			<div class="intro__inner">
+				<h1 class="intro_title"> В наличии потрясающие суккуленты из Кореи</h2>
+					<h2 class="intro_subtitle">Необычные, яркие, редкие!</h2>
+					<button class="button btn--main wow pulse animated" data-wow-duration="2s" data-wow-delay="3s" data-wow-offset="10" data-wow-iteration="infinite"
+					 type="button">Перейти в каталог</button>
+			</div>
+		</div>
+
+		<h1  class="popular_title"> Услуги</h1>
+		<div id="uslugi" class="popular">
+			<div id="item">
+				<img src="images/pop3.jpg" alt="" class="wow zoomIn animated" data-wow-duration="3s" data-wow-delay="2s" data-wow-offset="100" data-wow-iteration="3"">
+				<a href="">Онлайн консультация</a>
+			</div>
+			<div id="item">
+				<img src="images/pop2.jpg" alt="" class="wow zoomIn animated" data-wow-duration="3s" data-wow-delay="3s" data-wow-offset="100" data-wow-iteration="3"">
+				<a href="">Пересадка</a>
+			</div>
+			<div id="item">
+				<img src="images/pop1.jpeg" alt="" class="wow zoomIn animated" data-wow-duration="3s" data-wow-delay="4s" data-wow-offset="100" data-wow-iteration="3"">
+				<a href="">Озеленение пространства</a>
+			</div>
+		</div>
+
+
+		<h1 id="onas" class="popular_title"> О нас</h1>
+		<div class="container">
+			<div class="popular">
+				<div id="about_item">
+					<p>Enjoy Plants - это очень уютный, тёплый и влюбляющий в суккуленты магазинчик.</p>
+					<p>Суккуленты - это те самые модные и цветные южные растения, которые хочет поселить у себя на подоконнике каждая девушка.
+						У нас их огромное количество!</p>
+					<p>Так же Enjoy Plants - это мраморные горшочки. Мы вручную с любовью создаём каждый горшок.</p>
+					<p>Наша любовь передается через гармоничность композиций, упаковку, маленькие подарочки при покупке и брошюры с памятками,
+						всё сделано с заботой о Вас.</p>
+					<p>В нашем Insta-блоге мы подробно рассказываем, как ухаживать за домашними растениями, показываем лайфхаки и учим не бояться
+						приобретать растения, после неудачных попыток. </p>
+					<p>Вы всегда можете обратиться к нам за советом, если думаете, что с вашим суккулентом что-то не так.</p>
+				</div>
+				<div id="about_item">
+					<img src="images/shelby-miller-ieAnN9TkSwI-unsplash.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$('.menu-button').on('click', function () {
+				$('.menu').toggleClass('menu_active')
+			});
+
+			/*$(window).resize(function(){
+				var wid=$(window).width();
+				if(wid>760) {
+					$('.menu').toggleClass('menu')
+				}
+			});*/
+		});
+	</script>
+</body>
+
+</html>
